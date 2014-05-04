@@ -4,15 +4,17 @@ a {
 .popover {
   color: black !important;
   text-shadow: none !important;
-  z-index: 100;
 }
 .spacer {
   height: auto;
   margin: 0 auto;
   width: 100%;
-  position: relative;
+  position: sticky;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 150px 0;
+}
+.caption {
+  text-shadow: none;
 }
 .content-block {
   background: url("../img/content_back.png");
@@ -25,7 +27,10 @@ a {
   color:white;
   text-shadow: 2px 2px black;
 }
-.modal * {
+.about-img {
+  max-width:100px;
+}
+.modal {
    color:white;
 }
 .modal-header {
@@ -34,17 +39,20 @@ a {
 .modal-body {
    background: url("../img/content_back.png");
 }
+.panel * {
+  text-shadow: none;
+  color: black;
+}
 #spacer1 {
-background: url("../img/spacer_two_back.jpg");
-background-attachment: fixed;
-background-size:cover;
-background-position: center center;
+  background: url("../img/spacer_two_back.jpg");
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 #spacer2 {
   background: url("../img/spacer_one_back.jpg");
   background-attachment: fixed;
-  background-size: 0 50% 0;
+  background-size: 100% 100%;
   background-position:center center;
 }
 
