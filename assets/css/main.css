@@ -1,8 +1,10 @@
 a {
   cursor:pointer;
 }
-.container * {
-  color:white;
+.popover {
+  color: black !important;
+  text-shadow: none !important;
+  z-index: 100;
 }
 .spacer {
   height: auto;
@@ -20,7 +22,8 @@ a {
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 100px 0;
-   text-shadow: 2px 2px black;
+  color:white;
+  text-shadow: 2px 2px black;
 }
 .modal * {
    color:white;

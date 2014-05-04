@@ -5,9 +5,7 @@ $(document).ready(function () {
      // declare the variable to affect the defined data-type
      var $scroll = $(this);
                      
-      $(window).scroll(function() {
-        // HTML5 proves useful for helping with creating JS functions!
-        // also, negative value because we're scrolling upwards                             
+      $(window).scroll(function() {                         
         var yPos = -($window.scrollTop() / $scroll.data('speed')); 
          
         // background position
@@ -17,4 +15,9 @@ $(document).ready(function () {
         $scroll.css({ backgroundPosition: coords });    
       }); // end window scroll
    });  // end section function
+
+  //Might as well use this to init my popovers as well :D
+  $popElems = $(".hasPop"); //cache elements with popovers
+  $popElems.popover({ trigger: "click", html: true });
+  $popElems.find("a").click(function (evt) {$(".hasPop").popover('hide');});
 });
