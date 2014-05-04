@@ -20,6 +20,16 @@ a {
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 100px 0;
+   text-shadow: 2px 2px black;
+}
+.modal * {
+   color:white;
+}
+.modal-header {
+   background: url("../img/content_back.png");
+}
+.modal-body {
+   background: url("../img/content_back.png");
 }
 #spacer1 {
 background: url("../img/spacer_two_back.jpg");
