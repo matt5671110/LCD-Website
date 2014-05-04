@@ -7,6 +7,7 @@ $(document).ready(function () {
 
       $(window).scroll(function() {
         var yPos = -($window.scrollTop() / $scroll.data('speed'));
+        yPos += $scroll.scrollTop() * $scroll.data('speed');
 
         // background position
         var coords = '50% '+ yPos + 'px';

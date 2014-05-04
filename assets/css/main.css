@@ -9,7 +9,7 @@ a {
   height: auto;
   margin: 0 auto;
   width: 100%;
-  position: sticky;
+  position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 150px 0;
 }
@@ -46,19 +46,16 @@ a {
 #spacer1 {
   background: url("../img/spacer_two_back.jpg");
   background-attachment: fixed;
-  background-position: center center;
 }
 
 #spacer2 {
   background: url("../img/spacer_one_back.jpg");
   background-attachment: fixed;
-  background-size: 100% 100%;
-  background-position:center center;
+  background-size: cover;
 }
 
 #spacer3 {
   background: url("../img/spacer_three_back.jpg");
   background-attachment: fixed;
-  background-size:cover;
-  background-position:center center;
+  background-size: cover;
 }
